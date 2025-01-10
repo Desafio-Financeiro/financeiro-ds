@@ -1,0 +1,23 @@
+export declare const illustrationsMapped: {
+    devices: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    draw: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    error404: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    gift: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    graph: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    logo: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    logoSmall: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    logoWhite: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    pixelsBottomDark: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    pixelsBottomLight: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    pixelsBottomMedium: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    PixelsTopDark: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    pixelsTopLight: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    pixelsTopMedium: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    points: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    report: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    saveMoney: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    security: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    settings: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    signIn: ({ width, height }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+    transaction: ({ width, height, }: import("./components/types").IllustrationSVGProps) => import("react/jsx-runtime").JSX.Element;
+};

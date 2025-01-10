@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "moduleResolution": "node",
+      "target": "ES6",
+      "module": "ESNext",
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "allowSyntheticDefaultImports": true,
+      "outDir": "dist"
+    },
+    "include": ["src/**/*", "setupTests.ts"],
+    "exclude": ["**/*.test.tsx","**/*.test.ts", "**/*.stories.tsx"]
+  }
+  
