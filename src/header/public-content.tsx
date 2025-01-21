@@ -5,7 +5,12 @@ import { Actions } from "./actions";
 import { Logos } from "./logos";
 import Menu from "../menu";
 
-export function PublicContent() {
+interface PublicContentProps {
+  handleLogin?: VoidFunction;
+  handleRegister?: VoidFunction;
+}
+
+export function PublicContent(props: PublicContentProps) {
   const { breakpoints } = useTheme();
   return (
     <Stack
@@ -63,7 +68,7 @@ export function PublicContent() {
         </Stack>
       </Stack>
 
-      <Actions />
+      <Actions {...props} />
     </Stack>
   );
 }

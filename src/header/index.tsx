@@ -8,9 +8,18 @@ interface HeaderProps {
   isLogged: boolean;
   userName?: string;
   children?: React.ReactNode;
+
+  handleLogin?: VoidFunction;
+  handleRegister?: VoidFunction;
 }
 
-export function Header({ isLogged, userName, children }: HeaderProps) {
+export function Header({
+  isLogged,
+  userName,
+  children,
+  handleLogin,
+  handleRegister,
+}: HeaderProps) {
   const { palette } = useTheme();
 
   return (
@@ -25,7 +34,10 @@ export function Header({ isLogged, userName, children }: HeaderProps) {
       {isLogged ? (
         <LoggedContent userName={userName}>{children}</LoggedContent>
       ) : (
-        <PublicContent />
+        <PublicContent
+          handleLogin={handleLogin}
+          handleRegister={handleRegister}
+        />
       )}
     </Stack>
   );

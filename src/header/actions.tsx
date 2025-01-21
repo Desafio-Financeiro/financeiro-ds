@@ -4,7 +4,12 @@ import { Stack, useTheme } from "@mui/material";
 import { Button } from "../button";
 import theme from "../theme";
 
-export function Actions() {
+interface ActionsProps {
+  handleLogin?: VoidFunction;
+  handleRegister?: VoidFunction;
+}
+
+export function Actions({ handleLogin, handleRegister }: ActionsProps) {
   const { breakpoints, spacing } = useTheme();
   return (
     <Stack
@@ -22,7 +27,9 @@ export function Actions() {
         variant="contained"
         color="primary"
         label={"Abrir minha conta"}
-        onClick={() => console.log("Abrir minha conta")}
+        onClick={() => {
+          if (handleRegister) handleRegister();
+        }}
         sx={{ display: { xs: "none", lg: "block" } }}
       />
 
@@ -30,7 +37,9 @@ export function Actions() {
         variant="contained"
         color="primary"
         label={"Abrir conta"}
-        onClick={() => console.log("Abrir minha conta")}
+        onClick={() => {
+          if (handleLogin) handleLogin();
+        }}
         sx={{ display: { xs: "block", lg: "none" } }}
       />
 
