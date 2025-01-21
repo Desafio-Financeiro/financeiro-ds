@@ -12,7 +12,9 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default":
 function Header(_ref) {
   var isLogged = _ref.isLogged,
     userName = _ref.userName,
-    children = _ref.children;
+    children = _ref.children,
+    handleLogin = _ref.handleLogin,
+    handleRegister = _ref.handleRegister;
   var _useTheme = (0, _material.useTheme)(),
     palette = _useTheme.palette;
   return /*#__PURE__*/_react["default"].createElement(_material.Stack, {
@@ -24,5 +26,8 @@ function Header(_ref) {
     bgcolor: isLogged ? palette.action.active : palette.common.black
   }, isLogged ? /*#__PURE__*/_react["default"].createElement(_loggedContent.LoggedContent, {
     userName: userName
-  }, children) : /*#__PURE__*/_react["default"].createElement(_publicContent.PublicContent, null));
+  }, children) : /*#__PURE__*/_react["default"].createElement(_publicContent.PublicContent, {
+    handleLogin: handleLogin,
+    handleRegister: handleRegister
+  }));
 }

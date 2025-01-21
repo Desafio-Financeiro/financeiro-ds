@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Button = Button;
 var _material = require("@mui/material");
-var _react = _interopRequireDefault(require("react"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 function Button(_ref) {
   var label = _ref.label,
     _ref$variant = _ref.variant,
@@ -18,13 +16,13 @@ function Button(_ref) {
     onClick = _ref.onClick,
     sx = _ref.sx,
     isLoading = _ref.isLoading;
-  return /*#__PURE__*/_react["default"].createElement(_material.Button, {
+  return /*#__PURE__*/React.createElement(_material.Button, {
     variant: variant,
     color: color,
     disabled: disabled !== null && disabled !== void 0 ? disabled : isLoading,
     onClick: onClick,
     sx: sx
-  }, /*#__PURE__*/_react["default"].createElement(_material.Typography, {
+  }, /*#__PURE__*/React.createElement(_material.Typography, {
     variant: "body1"
   }, isLoading ? "Carregando..." : label));
 }
